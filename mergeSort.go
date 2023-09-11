@@ -1,4 +1,4 @@
-package mergesort
+package mergeSort
 
 import (
 	"fmt"
@@ -6,13 +6,13 @@ import (
 	"strings"
 )
 
-func main() {
+func mergesort() {
 
 	x := input([]int64{}, nil)
 	//fmt.Println(x)
 
 	fmt.Println("\n--- Unsorted --- \n\n", x)
-	fmt.Println("\n--- Sorted ---\n\n", mergeSort(x))
+	fmt.Println("\n--- Sorted ---\n\n", MergeSort(x))
 }
 
 func input(inputArray []int64, err error) []int64 {
@@ -47,7 +47,7 @@ LOOP:
 }
 
 // Splitting the user input inputArray in to two arrays
-func mergeSort(items []int64) []int64 {
+func MergeSort(items []int64) []int64 {
 	var num = int64(len(items))
 
 	if num == 1 {
@@ -67,7 +67,7 @@ func mergeSort(items []int64) []int64 {
 		}
 	}
 
-	return merge(mergeSort(left), mergeSort(right))
+	return merge(MergeSort(left), MergeSort(right))
 }
 
 // joins the two sorted arrays to one single array
