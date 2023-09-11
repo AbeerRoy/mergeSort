@@ -1,4 +1,4 @@
-package mergeSort
+package main
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func mergesort() {
+func main() {
 
 	x := input([]int64{}, nil)
 	//fmt.Println(x)
