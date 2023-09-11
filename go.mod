@@ -1,3 +1,3 @@
-module github.com/AbeerRoy/mergeSort.git
+module github.com/AbeerRoy/mergeSort
 
 go 1.21.0
